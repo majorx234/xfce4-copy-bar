@@ -16,8 +16,8 @@ set(MAIN_SOURCES
 )
 
 set(XFCE4_COPY_BAR_SOURCES
-  ${CMAKE_CURRENT_SOURCE_DIR}/src/xfc4-copy-bar.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/include/xfce4-copy-bar.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/xfce4-copy-bar.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/xfce4-copy-bar.hpp
   ${CMAKE_CURRENT_SOURCE_DIR}/src/dock.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/include/dock.hpp
 )
