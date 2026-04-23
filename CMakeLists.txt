@@ -6,7 +6,7 @@ project(xfce4-copy-bar
 include(FindPkgConfig)
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(XFCE4_PANEL REQUIRED libxfce4panel-2.0)
-
+pkg_check_modules(XFCE4_UI REQUIRED libxfce4ui-2)
 set(CMAKE_MODULE_PATH "${CMAKE_MODULE_PATH}" "${PROJECT_SOURCE_DIR}/cmake")
 
 include_directories(include)
@@ -29,6 +29,7 @@ target_sources(xfce4-copy-bar
 )
 target_include_directories(xfce4-copy-bar
   PUBLIC ${XFCE4_PANEL_INCLUDE_DIRS}
+  PUBLIC ${XFCE4_UI_INCLUDE_DIRS}
   PRIVATE include)
 target_link_libraries(xfce4-copy-bar)
 

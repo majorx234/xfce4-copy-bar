@@ -20,6 +20,8 @@
 #define  _XFCE4_COPY_BAR_H_
 
 #include <libxfce4panel/libxfce4panel.h>
+#include <libxfce4ui/libxfce4ui.h>
+#include <libxfce4util/libxfce4util.h>
 
 G_BEGIN_DECLS
 
@@ -30,6 +32,8 @@ typedef struct XFCE4CopyBarPlugin {
     GtkWidget       *hvbox;
     GtkWidget       *label;
 
+    GdkDevice* mPointer;
+    GdkDisplay* mDisplay;
     /* sample settings */
     GtkWidget       *settings_dialog;
     gchar           *setting1;
